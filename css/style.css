@@ -79,3 +79,22 @@ button:hover {
     font-size: 14px;
     color: red;
 }
+
+/* --- media queries --- */
+@media screen and (max-width:768px) {
+    .layout{
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .layout{
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .layout{
+        max-width: 640px;
+    }
+}

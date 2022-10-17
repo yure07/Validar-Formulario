@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    <title>Validar Formulário</title>
+</head>
+
+<body>
+    <section class="layout">
+        <h1>Validação de Formulário</h1>
+        <hr>
+        <ul>
+            <li>Nenhum campo pode estar em branco.</li>
+            <li>Usuário só pode conter letras e/ou números.</li>
+            <li>Nome de Usuário deve ter entre 3 e 12 caracteres.</li>
+            <li>Senha deve ter entre 6 e 12 caracteres.</li>
+        </ul>
+        <form action="/" class="formulario" method="post">
+            <label>Nome</label>
+            <input type="text" class="nome validos">
+            <label>Sobrenome</label>
+            <input type="text" class="sobrenome validos">
+            <label>CPF</label>
+            <input type="text" class="cpf validos">
+            <label>Usuário</label>
+            <input type="text" class="usuario validos">
+            <label>Senha</label>
+            <input type="password" class="senha validos">
+            <label>Repetir Senha</label>
+            <input type="password" class="repetir-senha validos">
+            <button class="enviar">Enviar</button>
+        </form>
+    </section>
+    
+    <script src="./js/validarCpf.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
